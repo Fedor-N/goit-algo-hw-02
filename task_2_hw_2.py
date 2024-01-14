@@ -8,8 +8,7 @@ def is_palindrome(input_str):
     char_queue = deque()
 
     # Додати символи до двосторонньої черги
-    for char in input_str:
-        char_queue.append(char)
+    char_queue = deque(input_str)
 
     # Порівняти символи з обох кінців черги
     while len(char_queue) > 1:
